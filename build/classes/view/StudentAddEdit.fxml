@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentEditController">
+   <children>
+      <TextField fx:id="fieldFirstName" layoutX="23.0" layoutY="23.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label layoutX="49.0" layoutY="6.0" text="First Name" />
+      <Label layoutX="236.0" layoutY="6.0" text="Last Name" />
+      <TextField fx:id="fieldSecondName" layoutX="209.0" layoutY="23.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="fieldGroup" layoutX="116.0" layoutY="55.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label layoutX="154.0" layoutY="27.0" text="Group" />
+      <Label layoutX="139.0" layoutY="89.0" text="Departnemt" />
+      <Label layoutX="149.0" layoutY="154.0" text="Institute" />
+      <Label layoutX="146.0" layoutY="213.0" text="Late Date" />
+      <DatePicker fx:id="calendar" editable="false" layoutX="63.0" layoutY="242.0" prefHeight="25.0" prefWidth="223.0" />
+      <Button fx:id="btnAdd" layoutX="78.0" layoutY="286.0" mnemonicParsing="false" onAction="#clickEdit" prefHeight="25.0" prefWidth="186.0" text="Add" />
+      <ChoiceBox fx:id="fieldInstitute" layoutX="63.0" layoutY="177.0" prefHeight="25.0" prefWidth="223.0">
+          <items>
+                <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="PZKS" />
+                            <String fx:value="Faculty of Mathematics" />
+                            <String fx:value="Physics Department" />
+                </FXCollections>
+          </items>
+      <value>
+          <String fx:value="PZKS" />
+          </value>     
+      </ChoiceBox>
+      <ChoiceBox fx:id="fieldDepartment" layoutX="63.0" layoutY="118.0" prefHeight="25.0" prefWidth="223.0">
+           <items>
+                <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Department of Computer Science" />
+                            <String fx:value="Faculty of Mathematics" />
+                            <String fx:value="Physics Department" />
+                </FXCollections>
+          </items>
+          <value>
+          <String fx:value="Department of Computer Science" />
+          </value>
+      </ChoiceBox>
+   </children>
+</AnchorPane>

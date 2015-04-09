@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="445.0" stylesheets="@../missstudent/style/styleMessage.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentErrorController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="120.0" prefWidth="121.0" />
+      <Label layoutX="155.0" layoutY="34.0" text="Not selected item">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="66.0" text="Select the item and try again." />
+      <Button fx:id="close" layoutX="310.0" layoutY="109.0" mnemonicParsing="false" onAction="#closeMessage" prefHeight="25.0" prefWidth="111.0" text="Ok" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
